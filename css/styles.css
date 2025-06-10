@@ -181,7 +181,8 @@ body {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #0f0f0f 100%);
+    background: linear-gradient(135deg, #2c2c2c 0%, #1a1a1a 50%, #0f0f0f 100%),
+                url('../images/Live Westover Green May 2025.JPEG') center center / cover no-repeat;
     padding: 80px 40px;
     text-align: center;
     position: relative;
