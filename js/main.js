@@ -1,19 +1,25 @@
 // Smooth scrolling for navigation links
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('.nav-links a');
+    const heroButtons = document.querySelectorAll('.cta-button[href^="#"]');
     
-    navLinks.forEach(link => {
-        link.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('href');
-            const targetSection = document.querySelector(targetId);
-            
+    function smoothScrollHandler(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        if (targetSection) {
             window.scrollTo({
                 top: targetSection.offsetTop - 80, // Offset for header
                 behavior: 'smooth'
             });
-        });
+        }
+    }
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', smoothScrollHandler);
+    });
+    heroButtons.forEach(button => {
+        button.addEventListener('click', smoothScrollHandler);
     });
 
     // Enhanced sound wave animation
