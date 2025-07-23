@@ -187,7 +187,6 @@
     <!-- Gallery Section -->
     <section id="gallery" class="section section-dark">
         <h2>Photo Gallery</h2>
-        <p class="gallery-intro">Capturing the energy and excitement of our live shows</p>
         <div class="gallery-grid">
             <div class="gallery-item">
                 <img src="images/gallery/westover-may-2025-1.jpg" alt="Live performance at Westover Beer Garden" loading="lazy">
@@ -203,18 +202,19 @@
                     <p>April 26, 2025</p>
                 </div>
             </div>
-            <div class="gallery-item">
-                <img src="images/gallery/pete-westover-may-2025.jpg" alt="Pete performing at Westover Beer Garden" loading="lazy">
-                <div class="gallery-overlay">
-                    <h3>Westover Beer Garden</h3>
-                    <p>May 18, 2025</p>
-                </div>
-            </div>
+
             <div class="gallery-item">
                 <img src="images/gallery/rehersal-july-2025-1.jpg" alt="Band rehearsal session" loading="lazy">
                 <div class="gallery-overlay">
                     <h3>Rehearsal Session</h3>
                     <p>July 2025</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/gallery/lost-and-sound-logo-record-black.jpg" alt="Lost & Sound band logo" loading="lazy">
+                <div class="gallery-overlay">
+                    <h3>Lost & Sound</h3>
+                    <p>Band Logo</p>
                 </div>
             </div>
         </div>
@@ -243,6 +243,20 @@
             </div>
         </div>
     </section>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-date"></p>
+            </div>
+            <button class="lightbox-nav lightbox-prev">&lt;</button>
+            <button class="lightbox-nav lightbox-next">&gt;</button>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">
