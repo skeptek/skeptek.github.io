@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', function() {
         currentImageIndex = index;
         const img = galleryImages[index];
         const item = galleryItems[index];
-        const title = item.querySelector('.gallery-overlay h3').textContent;
-        const date = item.querySelector('.gallery-overlay p').textContent;
+        const title = item.querySelector('.gallery-caption h3').textContent;
+        const date = item.querySelector('.gallery-caption p').textContent;
         
         lightboxImage.src = img.src;
         lightboxImage.alt = img.alt;
